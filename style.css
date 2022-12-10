@@ -354,11 +354,17 @@ h6 {
     font-size: 1rem;
     font-weight: 500;
 }
+/*  */
 .chart-one,
 .chart-two {
-    display: inline-block;
+    display: block;
     width: 540px;
-    height: 270px;
+    height: 270px; 
+}
+#chartOne,
+#chartTwo {
+    width: 270px !important;
+    height: 270px !important;
 }
 .sale-charts {
     display: flex;
@@ -366,29 +372,26 @@ h6 {
     justify-content: space-around;
     margin: 48px 0 0;
 }
-.chart-top-text {
-    display: flex;
-    justify-content: space-between;
-    margin: 56px 0 32px;
-}
-.chart-top-text h5 {
+.chart-container {
     display: flex;
     flex-direction: column;
-    order: 0;
-    width: 50%;
+    justify-content: space-around;
+}
+.chart-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.chart-title {
     text-align: left;
-    margin-left: 32px;
+    margin-bottom: 32px;
+    padding-left: 12px;
 }
 .chart-top-text h5:after {
     content: "";
     order: 1;
     background: linear-gradient(to right, #e874bf, #a462c3);
     height: 2px;
-}
-.chart-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 .chart-legend {
     text-align: left;
