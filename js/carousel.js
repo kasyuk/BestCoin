@@ -5,5 +5,10 @@ $(document).ready(function(){
         nav: true,
         dots: false,
         items: 1,
+        autoplay: true,
+        autplayTimeout: 3000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 800,
+        navSpeed: 800
     })
 });
