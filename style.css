@@ -51,6 +51,16 @@
         display: block;
         padding: 14px 0 72px !important;
     }
+    /*FEATURE*/
+    .features-content {
+        align-items: center !important;
+        flex-direction: column;
+    }
+    .feature-item {
+     width: 33% !important;
+     font-size: 2rem !important;
+    }
+    /*TOKEN SALE*/
     .chart-one,
     .chart-two {
         /* display: block; */
@@ -71,6 +81,21 @@
     .sale-charts {
         display: flex;
         flex-direction: column !important;
+    }
+    .token-sale-content {
+        height: auto !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .token-sale-item h3{
+        padding: 0 0.3rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300
+    }
+    .sale-bottom-text p {
+        padding-top: 1rem;
+        font-size: 1.15rem !important;
     }
     .chart-row {
         display: flex;
@@ -120,8 +145,11 @@
     /*TEAM*/
     .team-container {
         display: flex;
-        flex: 1 0 0 !important;
         flex-wrap: wrap;
+    }
+    .person {
+        width: 50%;
+        padding-bottom: 2rem;
     }
     /*FAQ*/
     .faq-content {
@@ -130,15 +158,20 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 1rem !important;
+    }
+    .faq-container .title-text {
+        margin: 0 auto !important;
+        max-width: 70% !important;
+        padding: 0 0 3rem !important;
+        font-weight: 300;
+        font-size: 1rem;
     }
     .faq-content .question {
-        /* width: 100% !important; */
         max-width: 100%;
-        height: auto !important;
-        margin-bottom: 16px;
+        margin-bottom: 2.4rem !important;
         text-align: left !important;
+        height: max-content !important;
     }
     .faq-content .question .q-title {
         text-align: center !important;
@@ -147,12 +180,8 @@
         font-weight: 200;
         line-height: 1.4;
     }
-    .faq-container .title-text {
-        margin: 0 auto !important;
-        max-width: 70% !important;
-        padding: 0 0 24px;
-        font-weight: 300;
-        font-size: 18px;
+    .faq-content .question .q-text {
+        height: auto !important;
     }
     .footer-text {
         max-width: 90%
@@ -184,6 +213,7 @@
         display: block;
         padding: 14px 0 72px !important;
     }
+    /*CHART*/
     .chart-one,
     .chart-two {
         /* display: block; */
@@ -204,6 +234,12 @@
     .sale-charts {
         display: flex;
         flex-direction: column !important;
+    }
+    .token-sale-content {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
     }
     .chart-row {
         display: flex;
@@ -260,12 +296,10 @@
         justify-content: center;
         align-items: center;
     }
-    .faq-content .question {
+    .faq-container .question {
         width: 100% !important;
         /* max-width: 50%; */
         text-align: center !important;
-        height: auto !important;
-        margin-bottom: 16px;
     }
     .faq-container .title-text {
         margin: 0 auto !important;
@@ -273,12 +307,6 @@
         padding: 0 0 24px;
         font-weight: 400 !important;
         font-size: 18px;
-    }
-    .token-sale-content {
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
     }
     /*FEATURES*/
     .features-content {
@@ -309,9 +337,6 @@
         display: flex;
         flex-direction: column ;
         flex-wrap: wrap;
-        /* justify-content: space-evenly; */
-        /* margin: 48px 0 0; */
-        /* align-items: center !important; */
     }
     /*TEAM*/
     .team-container {
@@ -429,16 +454,15 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-logo {
-    margin-left: 24px;
+    margin: 0 3rem;
 }
 .header-content {
     display: flex;
     align-items: center;
+    font-size: 1.15rem;
 }
 .logo {
-    font-size: 36px;
+    font-size: 2.4rem;
     font-weight: 400;
     color:#505FC7;
 }
@@ -463,7 +487,7 @@ h6 {
 }
 .menu-list a {
     text-decoration: none;
-    font-size: 16px;
+    /* font-size: 1.2rem; */
     font-weight: 400;
     color:#505FC7;
 }
@@ -690,13 +714,14 @@ h6 {
 }
 .token-sale-content {
     text-align: center;
+    display: flex;
+    padding: 0 0 3rem;
 }
 .token-sale-item {
     display: inline-block;
     width: 380px;
     flex-grow: 1;
     text-align: center;
-    padding: 0 0 48px;
 }
 .token-sale-item h6 {
     color: #FF78CB;
@@ -707,10 +732,6 @@ h6 {
     font-size: 2.4rem;
     font-weight: 300;
     line-height: 1.2;
-    /* padding: 0 0 48px; */
-}
-.token-sale-content {
-    display: flex;
 }
 .btn-purchase {
     display: inline-block;
@@ -1037,7 +1058,7 @@ h6 {
     width: 255px;
     height: 372px;
     object-fit: cover;
-    padding-bottom: 24px;
+    padding-bottom: 0.5rem;
 }
 /*  */
 .faq-container .title-text {
