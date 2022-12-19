@@ -35,6 +35,12 @@
     color: #f96ec6;
 }
 @media screen and (max-width: 1024px){
+    .header-content {
+        text-align: center !important;
+    }
+    .menu-list li{
+        margin: 2rem 0.8rem !important;
+    }
     .graph img{
         width: 100%;
         position: relative;
@@ -152,7 +158,22 @@
         max-width: 90%
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+    .header-content .menu-body {
+        display: none !important;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none !important;
+    }
+    .dropdown-menu .menu-list {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 1rem !important;
+    }
     .graph img{
         width: 100%;
         position: relative;
@@ -398,6 +419,12 @@ h6 {
     padding: 0 15px;
 }
 /* header */
+.menu-list li :hover {
+    color: #ff78cb;
+}
+.menu-list :first-child :hover {
+    color:#38eeb9 !important;
+}
 .header-row {
     display: flex;
     justify-content: space-between;
@@ -405,6 +432,10 @@ h6 {
 }
 .header-logo {
     margin-left: 24px;
+}
+.header-content {
+    display: flex;
+    align-items: center;
 }
 .logo {
     font-size: 36px;
@@ -416,7 +447,7 @@ h6 {
     color: #FF78CB;
 }
 .menu-body {
-    margin-right: 24px;
+    margin-right: 1.5rem;
 }
 .menu-list {
     list-style: none;
@@ -428,7 +459,7 @@ h6 {
 }
 .menu-list li {
     text-align: center;
-    margin: 2rem 24px;
+    margin: 2rem 0.8rem;
 }
 .menu-list a {
     text-decoration: none;
@@ -443,9 +474,6 @@ h6 {
 .hidden {
     display: none;
 }
-.show {
-    display: block;
-}
 .dropbtn {
     font-weight: 700 !important;
     color: #FF78CB !important;
@@ -456,15 +484,16 @@ h6 {
 .dropdown {
     float: left;
     overflow: hidden;
-    margin: 0 auto;
-    width: 160px;
+    margin: 2rem auto;
+    width: 120px;
+    text-align: center;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     /* margin-top: 10px; */
     z-index: 1;
-    min-width: 160px;
+    min-width: 120px;
 }
 .dropdown-content a {
     float: none;
