@@ -34,15 +34,15 @@
 .pinks {
     color: #f96ec6;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1799px) {
     .open-text {
-        font-size: 7rem !important;
+        font-size: 10rem !important;
         font-weight: 600;
         width: 100% !important;
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
     .open-text {
         font-size: 8rem !important;
         font-weight: 600;
@@ -50,38 +50,15 @@
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1279px) {
     .open-text {
-        font-size: 9rem !important;
+        font-size: 7rem !important;
         font-weight: 600;
         width: 100% !important;
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 900px) {
-    .menu-body {
-        display: none !important;
-    }
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-    .dropdown:hover .dropdown-content {
-        display: none !important;
-    }
-    .dropdown-menu .menu-list {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        position: absolute;
-        right: 2rem !important;
-        height: 4rem;
-        
-    }
-    .dropdown-menu .menu-list li {
-        text-align: left;
-    }
-}
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     .header-content {
         text-align: center !important;
     }
@@ -158,16 +135,17 @@
     .chart-title {
         margin: 0 auto !important;
         text-align: center !important;
-        min-width: 400px !important;
+        /* min-width: 400px; */
     }
     .chart-title h5 {
         display: flex;
         flex-direction: column;
         order: 0;
-        width: 300px !important;
+        width: 400px !important;
         text-align: center !important;
         align-items: center !important;
-        margin: 0 auto;
+        margin: 0 auto !important;
+        padding: 0 !important;
         padding-bottom: 24px !important;
 
     }
@@ -223,7 +201,7 @@
     .faq-content .question {
         max-width: 100%;
         margin-bottom: 2.4rem !important;
-        text-align: left !important;
+        text-align: center;
         height: max-content !important;
     }
     .faq-content .question .q-title {
@@ -240,7 +218,30 @@
         max-width: 90%
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 899px) {
+    .menu-body {
+        display: none !important;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none !important;
+    }
+    .dropdown-menu .menu-list {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        position: absolute;
+        right: 2rem !important;
+        height: 4rem;
+        
+    }
+    .dropdown-menu .menu-list li {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 767px) {
     .header-content .menu-body {
         display: none !important;
     }
@@ -295,7 +296,7 @@
     .chart-title {
         margin: 0 auto !important;
         text-align: center !important;
-        min-width: 400px !important;
+        min-width: 300px !important;
     }
     .chart-title h5 {
         display: flex;
@@ -320,7 +321,7 @@
         margin: 0 auto !important;
     }
     .news-item {
-        padding: 0 0 !important;
+        padding: 0 !important;
     }
     .news-item h6 {
         display: flex;
@@ -392,6 +393,13 @@
         flex-direction: column ;
         flex-wrap: wrap;
     }
+    .why-content .text-container {
+        width: 80%;
+    }
+    .why-content .text-container h1 {
+        text-align: center !important;
+        font-size: 2rem;
+    }
     /*ROADMAP*/
     .roadmap {
         padding: 1rem 0 3rem !important;
@@ -406,7 +414,7 @@
         padding: 0 0 !important;
     }
     .team-container .person {
-        margin-bottom: 48px;
+        margin-bottom: 2rem;
     }
     .footer-content {
         display: flex !important;
@@ -433,13 +441,13 @@
     .footer .right,
     .footer .mid {
         order: 2;
-        width: 50% !important;
+        width: 40% !important;
+        padding-left: 1rem;
     }
 
     .links {
         display: flex;
         flex-direction: row !important;
-        /* flex-wrap: nowrap !important; */
         justify-content: flex-start !important;
     }
     .footer-nav a,
@@ -453,6 +461,48 @@
     }
     .copyright {
         margin: 2rem 0 3rem !important;
+    }
+}
+@media screen and (max-width: 479px) {
+    /*HERO*/
+    .open-text {
+        font-size: 4rem !important;
+        font-weight: 600;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .hero-description {
+        width: 90%
+    }
+    /*CHART*/
+    .chart-title h5{
+        margin: 0 auto !important;
+        width: 300px;
+        /* padding: 0 !important; */
+    }
+    .chart-title {
+        padding: 0 !important;
+    }
+    /*NEWS*/
+    .news-item-container {
+        max-width: 80% !important;
+    }
+    .news-item h6,
+    .news-item h5 {
+        justify-content: center;
+        text-align: center;
+    }
+    /*TEAM*/
+    .team-container .person {
+        align-items: center !important;
+        width: 100%;
+    }
+    /*FAQ*/
+    .faq-container .blue {
+        font-size: 1.7rem
+    }
+    .faq-content .question {
+        max-width: 80% !important;
     }
 }
 html {
