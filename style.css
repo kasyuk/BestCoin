@@ -175,7 +175,7 @@
         flex-wrap: wrap;
     }
     .person {
-        width: 50%;
+        width: auto;
         padding-bottom: 2rem;
     }
     /*FAQ*/
