@@ -241,10 +241,6 @@
     .header-content .menu-body {
         display: none !important;
     }
-    .menu-list a {
-        font-size: 0.7rem;
-        font-weight: 600;
-    }
     .graph img{
         width: 100%;
         position: relative;
@@ -460,6 +456,10 @@
     }
 }
 @media screen and (max-width: 479px) {
+    .menu-list a {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
     /*HERO*/
     .open-text {
         font-size: 4rem !important;
