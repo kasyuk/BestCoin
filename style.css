@@ -243,6 +243,7 @@
     }
     .menu-list a {
         font-size: 0.7rem;
+        font-weight: 600;
     }
     .graph img{
         width: 100%;
