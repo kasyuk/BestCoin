@@ -76,9 +76,6 @@
         z-index: -1;
         margin: -5rem 0 -5rem !important;
     }
-    .section {
-        display: block;
-    }
     /*FEATURE*/
     .features-content {
         align-items: center !important;
@@ -249,9 +246,6 @@
         position: relative;
         z-index: -1;
         margin: -3rem 0 -3rem !important;
-    }
-    .section {
-        display: block;
     }
     /*CHART*/
     .chart-one,
