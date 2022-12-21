@@ -466,6 +466,9 @@
     .hero-description {
         width: 90%
     }
+    .text-block .text-center {
+        margin: 4rem 0 -2rem 0 !important;
+    }
     /*CHART*/
     .chart-title h5{
         margin: 0 auto !important;
@@ -477,6 +480,10 @@
     }
     .token-sale {
         padding: 3rem 0 3rem !important;   
+    }
+    /*WHY*/
+    .why-content .btn-primary {
+        padding: 1rem 3rem !important;   
     }
     /*NEWS*/
     .news-item-container {
