@@ -241,6 +241,9 @@
     .header-content .menu-body {
         display: none !important;
     }
+    .menu-list a {
+        font-size: 0.7rem;
+    }
     .graph img{
         width: 100%;
         position: relative;
