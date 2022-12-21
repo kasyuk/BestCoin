@@ -63,7 +63,7 @@
         text-align: center !important;
     }
     .menu-list li{
-        margin: 0 0.8rem !important;
+        margin: 0 0.8rem;
     }
     /*hero*/
     .open-text {
@@ -229,7 +229,7 @@
         flex-direction: row;
         align-items: flex-end;
         position: absolute;
-        right: 2rem !important;
+        right: 1.8rem !important;
         height: 4rem;
         
     }
@@ -456,9 +456,14 @@
     }
 }
 @media screen and (max-width: 479px) {
-    .menu-list a {
-        font-size: 0.7rem;
-        font-weight: 600;
+    .nav-link {
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-list li {
+        margin: 0 0.25rem !important;
     }
     /*HERO*/
     .open-text {
@@ -611,9 +616,11 @@ h6 {
 }
 .menu-list a {
     text-decoration: none;
-    font-size: 1.1rem;
     font-weight: 400;
     color:#505FC7;
+}
+.nav-link {
+    font-size: 1.1rem;
 }
 .nav-features {
     color:#FF78CB !important;
