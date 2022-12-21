@@ -475,6 +475,9 @@
     .chart-title {
         padding: 0 !important;
     }
+    .token-sale {
+        padding: 3rem 0 3rem !important;   
+    }
     /*NEWS*/
     .news-item-container {
         max-width: 80% !important;
@@ -798,7 +801,7 @@ h6 {
     display: block;
     background-color: #f8f9fd;
     text-align: center;
-    padding: 3rem 0 5rem;
+    padding: 3rem 0 8rem;
 }
 .progress-area {
     display: flex;
