@@ -1,2 +1,2 @@
 # BestCoin
-work for portfolio
+landing page 
